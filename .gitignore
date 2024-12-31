@@ -1,0 +1,32 @@
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+.venv/
+env/
+.venvmlops120a1
+# Log files
+*.log
+
+# IDE files (example for PyCharm)
+.idea/
+
+# Data files (if you don't want to track them)
+data/
+*.csv
+*.json
+*.txt
+
+# Large files
+*.zip
+*.tar.gz
+*.7z
+
+#Temporary Files
+*.tmp
