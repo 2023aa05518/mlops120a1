@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 import io
-from main import main
+from src.main import main
 
 
 class TestMainFunction(unittest.TestCase):
