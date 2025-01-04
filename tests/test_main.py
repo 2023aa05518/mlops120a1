@@ -1,15 +1,15 @@
 import unittest
+from unittest.mock import patch
+import io
+from main import main
 
 
-def main():
-    print("hello")
+class TestMainFunction(unittest.TestCase):
 
-
-class TestMain(unittest.TestCase):
-    def test_main(self):
-        with self.assertLogs(level='INFO') as caplog:
-            main()
-            self.assertIn('hello', caplog.output)
+    @patch('sys.stdout', new_callable=io.StringIO)
+    def test_main_output(self, stdout):
+        main()
+        self.assertEqual(stdout.getvalue().strip(), "Hello")
 
 
 if __name__ == '__main__':
