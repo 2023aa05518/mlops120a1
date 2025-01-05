@@ -9,6 +9,7 @@ Thumbs.db
 # Virtual environments
 venv/
 .venv/
+.venv*
 env/
 .venvmlops120a1
 # Log files

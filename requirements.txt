@@ -1,0 +1,6 @@
+mlflow
+scikit-learn
+wandb
+pandas
+flake8
+feast
