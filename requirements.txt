@@ -3,4 +3,5 @@ scikit-learn
 wandb
 pandas
 flake8
+black
 feast
