@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/32adfedbcf444c87ac8b2f94008a6568/artifacts
+end_time: 1736080805250
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 32adfedbcf444c87ac8b2f94008a6568
+run_name: stately-bee-238
+run_uuid: 32adfedbcf444c87ac8b2f94008a6568
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736080800142
+status: 3
+tags: []
+user_id: Umesh.Pandey

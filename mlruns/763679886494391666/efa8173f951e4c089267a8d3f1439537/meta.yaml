@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/efa8173f951e4c089267a8d3f1439537/artifacts
+end_time: 1736080810488
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: efa8173f951e4c089267a8d3f1439537
+run_name: adorable-finch-30
+run_uuid: efa8173f951e4c089267a8d3f1439537
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736080805297
+status: 3
+tags: []
+user_id: Umesh.Pandey
