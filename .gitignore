@@ -12,6 +12,7 @@ venv/
 .venv*
 env/
 .venvmlops120a1
+tmp/
 # Log files
 *.log
 
@@ -19,10 +20,10 @@ env/
 .idea/
 
 # Data files (if you don't want to track them)
-data/
-*.csv
-*.json
-*.txt
+# data/
+# *.csv
+# *.json
+# *.txt
 
 # Large files
 *.zip

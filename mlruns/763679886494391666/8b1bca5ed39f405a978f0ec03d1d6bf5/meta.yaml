@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/8b1bca5ed39f405a978f0ec03d1d6bf5/artifacts
+end_time: 1736148214122
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 8b1bca5ed39f405a978f0ec03d1d6bf5
+run_name: funny-fox-76
+run_uuid: 8b1bca5ed39f405a978f0ec03d1d6bf5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736148214040
+status: 3
+tags: []
+user_id: Umesh.Pandey

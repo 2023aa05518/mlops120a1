@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/7c60a69f26c248d785a763f8d6b77166/artifacts
+end_time: 1736148261874
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 7c60a69f26c248d785a763f8d6b77166
+run_name: languid-hound-461
+run_uuid: 7c60a69f26c248d785a763f8d6b77166
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736148243027
+status: 3
+tags: []
+user_id: Umesh.Pandey
