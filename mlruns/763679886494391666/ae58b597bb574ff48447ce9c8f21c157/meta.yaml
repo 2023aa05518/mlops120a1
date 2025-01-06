@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/ae58b597bb574ff48447ce9c8f21c157/artifacts
+end_time: 1736148268931
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: ae58b597bb574ff48447ce9c8f21c157
+run_name: righteous-boar-20
+run_uuid: ae58b597bb574ff48447ce9c8f21c157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736148261896
+status: 3
+tags: []
+user_id: Umesh.Pandey

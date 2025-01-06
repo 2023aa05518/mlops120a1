@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/236d018edf984fed85b4bca46d50f1a0/artifacts
+end_time: 1736148282672
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 236d018edf984fed85b4bca46d50f1a0
+run_name: adaptable-mole-569
+run_uuid: 236d018edf984fed85b4bca46d50f1a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736148275862
+status: 3
+tags: []
+user_id: Umesh.Pandey
