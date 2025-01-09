@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/57d1946fb07945f783c3e5d76d943388/artifacts
+end_time: 1736419652843
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 57d1946fb07945f783c3e5d76d943388
+run_name: respected-mouse-991
+run_uuid: 57d1946fb07945f783c3e5d76d943388
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736419652591
+status: 4
+tags: []
+user_id: Dell

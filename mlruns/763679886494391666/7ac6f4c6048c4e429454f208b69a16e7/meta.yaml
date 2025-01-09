@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/7ac6f4c6048c4e429454f208b69a16e7/artifacts
+end_time: 1736419801152
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 7ac6f4c6048c4e429454f208b69a16e7
+run_name: orderly-smelt-348
+run_uuid: 7ac6f4c6048c4e429454f208b69a16e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736419793622
+status: 3
+tags: []
+user_id: Dell
