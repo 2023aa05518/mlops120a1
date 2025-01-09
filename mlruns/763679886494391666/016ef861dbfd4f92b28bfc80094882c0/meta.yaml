@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/016ef861dbfd4f92b28bfc80094882c0/artifacts
+end_time: 1736355062417
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 016ef861dbfd4f92b28bfc80094882c0
+run_name: sassy-gull-691
+run_uuid: 016ef861dbfd4f92b28bfc80094882c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736355062375
+status: 3
+tags: []
+user_id: Dell

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/a1c59c9c00124f4885f7c203564a2052/artifacts
+end_time: 1736355062311
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: a1c59c9c00124f4885f7c203564a2052
+run_name: illustrious-asp-864
+run_uuid: a1c59c9c00124f4885f7c203564a2052
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736355062261
+status: 3
+tags: []
+user_id: Dell

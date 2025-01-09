@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/4bb4d2c21aef4380804d4347c6aeef5a/artifacts
+end_time: 1736355062363
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 4bb4d2c21aef4380804d4347c6aeef5a
+run_name: mercurial-bug-457
+run_uuid: 4bb4d2c21aef4380804d4347c6aeef5a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736355062331
+status: 3
+tags: []
+user_id: Dell
