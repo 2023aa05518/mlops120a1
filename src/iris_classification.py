@@ -68,5 +68,5 @@ def train_and_log_model(data_path):
         print("Model logged in MLflow.")
 
 if __name__ == "__main__":
-    data_path = "./data/iris.csv"  # Path to your dataset
+    data_path = "./data/iris_dataset.csv"  # Path to your dataset
     train_and_log_model(data_path)

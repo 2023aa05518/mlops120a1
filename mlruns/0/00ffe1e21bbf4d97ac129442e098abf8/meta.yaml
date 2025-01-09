@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/00ffe1e21bbf4d97ac129442e098abf8/artifacts
+end_time: 1736407783027
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 00ffe1e21bbf4d97ac129442e098abf8
+run_name: mercurial-perch-827
+run_uuid: 00ffe1e21bbf4d97ac129442e098abf8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736407775622
+status: 4
+tags: []
+user_id: Dell
