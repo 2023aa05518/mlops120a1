@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/e1ce80167aee4edd9635eb7b335dc2ec/artifacts
+end_time: 1736409195328
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: e1ce80167aee4edd9635eb7b335dc2ec
+run_name: upbeat-penguin-534
+run_uuid: e1ce80167aee4edd9635eb7b335dc2ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736409189880
+status: 3
+tags: []
+user_id: Dell

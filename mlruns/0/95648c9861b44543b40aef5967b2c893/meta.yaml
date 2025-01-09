@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/95648c9861b44543b40aef5967b2c893/artifacts
+end_time: 1736408315443
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 95648c9861b44543b40aef5967b2c893
+run_name: amusing-tern-338
+run_uuid: 95648c9861b44543b40aef5967b2c893
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736408308775
+status: 4
+tags: []
+user_id: Dell
