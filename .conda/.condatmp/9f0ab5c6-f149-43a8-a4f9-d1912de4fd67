@@ -1,0 +1,13 @@
+prefix=d:/Anand/BITS WILP/SEM3/MLOps/assignment/mlops120a1/.conda/Library
+exec_prefix=d:/Anand/BITS WILP/SEM3/MLOps/assignment/mlops120a1/.conda/Library
+libdir=d:/Anand/BITS WILP/SEM3/MLOps/assignment/mlops120a1/.conda/Library/lib
+sharedlibdir=d:/Anand/BITS WILP/SEM3/MLOps/assignment/mlops120a1/.conda/Library/lib
+includedir=d:/Anand/BITS WILP/SEM3/MLOps/assignment/mlops120a1/.conda/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
