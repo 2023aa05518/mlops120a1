@@ -5,6 +5,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import pandas as pd
 
+
+mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("Iris Decision Tree Experiments")
 
 
