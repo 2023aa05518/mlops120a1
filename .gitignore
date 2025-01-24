@@ -13,6 +13,10 @@ venv/
 env/
 .venvmlops120a1
 tmp/
+mlruns/
+mlflow/
+mlflow.db
+
 # Log files
 *.log
 
