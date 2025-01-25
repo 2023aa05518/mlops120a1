@@ -17,7 +17,7 @@ def train_and_log(
     with mlflow.start_run():
         data_path = "./data/iris_dataset.csv"
         try:
-            columns = ['sepal length (cm)', 'sepal width (cm)', 
+            columns = ['sepal length (cm)', 'sepal width (cm)',
                        'petal length (cm)', 'petal width (cm)', 'species']
             dtype_dict = {
                 col: "float64" if col != "species" else "category"
