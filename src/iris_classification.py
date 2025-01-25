@@ -27,8 +27,6 @@ def train_and_log(
         except FileNotFoundError:
             print(f"Error: CSV file not found at {data_path}")
             return
-        # for col in df.select_dtypes(include="int").columns:
-        #     df[col] = df[col].astype("float64")
 
         mlflow.log_input(mlflow.data.from_pandas(df), context=f"{data_path}")
 
