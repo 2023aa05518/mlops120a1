@@ -13,7 +13,7 @@ mlflow.set_experiment("Iris Decision Tree Experiments")
 
 def train_and_log(
     max_depth=None, criterion="gini", target_column="species"
-):  # Added target_column as parameter
+):
     with mlflow.start_run():
         data_path = "./data/iris_dataset.csv"
         try:
@@ -31,7 +31,7 @@ def train_and_log(
         mlflow.log_input(mlflow.data.from_pandas(df), context=f"{data_path}")
 
         # Print the column names for debugging
-        print("Columns in CSV:", df.columns)
+        # print("Columns in CSV:", df.columns)
 
         try:
             X = df.drop(target_column, axis=1)
@@ -76,13 +76,11 @@ def train_and_log(
 
 
 if __name__ == "__main__":
-    # Run experiments with different parameters
     train_and_log(
         max_depth=None, criterion="gini", target_column="species"
     )
-    # Provide the correct target column name
     train_and_log(max_depth=3, criterion="entropy", target_column="species")
     train_and_log(max_depth=5, criterion="gini", target_column="species")
     train_and_log(max_depth=4, criterion="entropy", target_column="species")
 
-    print("All runs completed. Open MLflow UI to view results: `mlflow ui`")
+    print("All runs completed. ")
