@@ -1,4 +1,5 @@
 import mlflow
+import mlflow.data
 import mlflow.sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -16,10 +17,20 @@ def train_and_log(
     with mlflow.start_run():
         data_path = "./data/iris_dataset.csv"
         try:
-            df = pd.read_csv(data_path)
+            columns = ['sepal length (cm)', 'sepal width (cm)', 
+                       'petal length (cm)', 'petal width (cm)', 'species']
+            dtype_dict = {
+                col: "float64" if col != "species" else "category"
+                for col in columns
+                }
+            df = pd.read_csv(data_path, dtype=dtype_dict)
         except FileNotFoundError:
             print(f"Error: CSV file not found at {data_path}")
             return
+        # for col in df.select_dtypes(include="int").columns:
+        #     df[col] = df[col].astype("float64")
+
+        mlflow.log_input(mlflow.data.from_pandas(df), context=f"{data_path}")
 
         # Print the column names for debugging
         print("Columns in CSV:", df.columns)
