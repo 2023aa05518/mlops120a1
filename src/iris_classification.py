@@ -80,7 +80,7 @@ if __name__ == "__main__":
         max_depth=None, criterion="gini", target_column="species"
     )
     train_and_log(max_depth=3, criterion="entropy", target_column="species")
-    train_and_log(max_depth=2, criterion="gini", target_column="species")
+    train_and_log(max_depth=4, criterion="gini", target_column="species")
     train_and_log(max_depth=4, criterion="entropy", target_column="species")
 
     print("All runs completed. ")
