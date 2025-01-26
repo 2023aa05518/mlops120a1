@@ -16,7 +16,7 @@ def save_best_model(best_params):
 
     joblib.dump(model, "best_model.pkl")
     print("Model saved as 'best_model.pkl'")
-    
+
 
 if __name__ == "__main__":
     # Example best_params for testing
@@ -26,4 +26,3 @@ if __name__ == "__main__":
         "min_samples_split": 0.2
     }
     save_best_model(best_params)
-
