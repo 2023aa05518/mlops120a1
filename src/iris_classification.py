@@ -14,6 +14,7 @@ mlflow.set_experiment("Iris Decision Tree Experiments")
 # Uncomment if using a remote MLflow server
 # mlflow.set_tracking_uri("http://localhost:5000")
 
+
 def perform_hyperparameter_tuning(X_train, y_train):
     """
     Perform hyperparameter tuning using GridSearchCV.
@@ -37,11 +38,11 @@ def perform_hyperparameter_tuning(X_train, y_train):
     return grid_search.best_params_, grid_search.best_score_
 
 
-
 def train_and_log(
     max_depth=None, criterion="gini", target_column="species"
 ):
     with mlflow.start_run():
+        data_path = "./data/iris_dataset.csv"
         try:
             columns = ['sepal length (cm)', 'sepal width (cm)',
                        'petal length (cm)', 'petal width (cm)', 'species']
@@ -53,8 +54,6 @@ def train_and_log(
         except FileNotFoundError:
             print(f"Error: CSV file not found at {data_path}")
             return
-
-
         print("Columns in CSV:", df.columns)  # Debugging
         mlflow.log_input(mlflow.data.from_pandas(df), context=f"{data_path}")
 
@@ -65,7 +64,9 @@ def train_and_log(
             X = df.drop(target_column, axis=1)
             y = df[target_column]
         except KeyError as e:
-            print(f"Error: Column '{e}' not found. Available columns: {df.columns.tolist()}")
+            print("Error: Column '" + str(e) + "' not found. "
+                  "Available columns: " + str(df.columns.tolist()))
+
             return
 
         X_train, X_test, y_train, y_test = train_test_split(
@@ -73,8 +74,9 @@ def train_and_log(
         )
 
         # Perform hyperparameter tuning
-        best_params, best_score = perform_hyperparameter_tuning(X_train, y_train)
-
+        best_params, best_score = (
+            perform_hyperparameter_tuning(X_train, y_train)
+        )
         # Log best parameters and tuning details
         mlflow.log_param("best_max_depth", best_params["max_depth"])
         mlflow.log_param("best_criterion", best_params["criterion"])
@@ -96,7 +98,9 @@ def train_and_log(
         mlflow.log_metric("test_accuracy", accuracy)
 
         # Handle temporary file properly
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".txt", mode="w") as tmp:
+        with tempfile.NamedTemporaryFile(delete=False,
+                                         suffix=".txt",
+                                         mode="w") as tmp:
             tmp.write(report)
             tmp.flush()
             mlflow.log_artifact(tmp.name)
