@@ -1,4 +1,5 @@
 import mlflow
+import mlflow.data
 import mlflow.sklearn
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.tree import DecisionTreeClassifier
@@ -7,6 +8,8 @@ import pandas as pd
 import tempfile
 import os
 
+
+mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("Iris Decision Tree Experiments")
 # Uncomment if using a remote MLflow server
 # mlflow.set_tracking_uri("http://localhost:5000")
@@ -33,18 +36,30 @@ def perform_hyperparameter_tuning(X_train, y_train):
     grid_search.fit(X_train, y_train)
     return grid_search.best_params_, grid_search.best_score_
 
-def train_and_log(data_path, target_column="species"):
-    """
-    Train and log a DecisionTreeClassifier model with hyperparameter tuning.
-    """
+
+
+def train_and_log(
+    max_depth=None, criterion="gini", target_column="species"
+):
     with mlflow.start_run():
         try:
-            df = pd.read_csv(data_path)
+            columns = ['sepal length (cm)', 'sepal width (cm)',
+                       'petal length (cm)', 'petal width (cm)', 'species']
+            dtype_dict = {
+                col: "float64" if col != "species" else "category"
+                for col in columns
+                }
+            df = pd.read_csv(data_path, dtype=dtype_dict)
         except FileNotFoundError:
             print(f"Error: CSV file not found at {data_path}")
             return
 
+
         print("Columns in CSV:", df.columns)  # Debugging
+        mlflow.log_input(mlflow.data.from_pandas(df), context=f"{data_path}")
+
+        # Print the column names for debugging
+        # print("Columns in CSV:", df.columns)
 
         try:
             X = df.drop(target_column, axis=1)
@@ -94,7 +109,11 @@ def train_and_log(data_path, target_column="species"):
 
 
 if __name__ == "__main__":
-    data_path = "./data/iris_dataset.csv"  # Update as needed
-    train_and_log(data_path, target_column="species")
+    train_and_log(
+        max_depth=None, criterion="gini", target_column="species"
+    )
+    train_and_log(max_depth=3, criterion="entropy", target_column="species")
+    train_and_log(max_depth=4, criterion="gini", target_column="species")
+    train_and_log(max_depth=4, criterion="entropy", target_column="species")
 
-    print("All runs completed. Open MLflow UI to view results: `mlflow ui`")
+    print("All runs completed. ")
