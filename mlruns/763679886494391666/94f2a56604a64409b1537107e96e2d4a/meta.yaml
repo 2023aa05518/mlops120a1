@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/94f2a56604a64409b1537107e96e2d4a/artifacts
+end_time: 1736409189813
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 94f2a56604a64409b1537107e96e2d4a
+run_name: judicious-yak-970
+run_uuid: 94f2a56604a64409b1537107e96e2d4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736409184768
+status: 3
+tags: []
+user_id: Dell

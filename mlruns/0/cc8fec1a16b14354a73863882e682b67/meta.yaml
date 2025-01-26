@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/cc8fec1a16b14354a73863882e682b67/artifacts
+end_time: 1736408633611
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cc8fec1a16b14354a73863882e682b67
+run_name: dapper-hare-499
+run_uuid: cc8fec1a16b14354a73863882e682b67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736408628018
+status: 4
+tags: []
+user_id: Dell

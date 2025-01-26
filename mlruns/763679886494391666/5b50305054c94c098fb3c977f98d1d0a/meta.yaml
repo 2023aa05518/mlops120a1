@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/5b50305054c94c098fb3c977f98d1d0a/artifacts
+end_time: 1736419699194
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 5b50305054c94c098fb3c977f98d1d0a
+run_name: inquisitive-wolf-365
+run_uuid: 5b50305054c94c098fb3c977f98d1d0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736419698977
+status: 4
+tags: []
+user_id: Dell

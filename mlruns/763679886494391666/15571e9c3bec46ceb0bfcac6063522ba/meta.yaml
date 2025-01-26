@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/15571e9c3bec46ceb0bfcac6063522ba/artifacts
+end_time: 1736409001776
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: 15571e9c3bec46ceb0bfcac6063522ba
+run_name: stately-goose-749
+run_uuid: 15571e9c3bec46ceb0bfcac6063522ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736408996458
+status: 3
+tags: []
+user_id: Dell

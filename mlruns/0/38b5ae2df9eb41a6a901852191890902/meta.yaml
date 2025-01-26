@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/38b5ae2df9eb41a6a901852191890902/artifacts
+end_time: 1736408482271
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 38b5ae2df9eb41a6a901852191890902
+run_name: salty-shrew-26
+run_uuid: 38b5ae2df9eb41a6a901852191890902
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736408475843
+status: 4
+tags: []
+user_id: Dell

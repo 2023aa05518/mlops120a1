@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/root/opt/workspace/mlops_feature/mlops120a1/mlruns/763679886494391666/c7fe2862332a4210ab8e79220386d3c3/artifacts
+end_time: 1736408991336
+entry_point_name: ''
+experiment_id: '763679886494391666'
+lifecycle_stage: active
+run_id: c7fe2862332a4210ab8e79220386d3c3
+run_name: mysterious-doe-179
+run_uuid: c7fe2862332a4210ab8e79220386d3c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736408986369
+status: 3
+tags: []
+user_id: Dell

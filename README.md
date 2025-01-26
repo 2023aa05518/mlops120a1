@@ -8,7 +8,7 @@ This project focuses on understanding the basics of MLOps by implementing a CI/C
 
 ## Objectives
 - Build a CI/CD pipeline for a machine learning project.
-- Use version control effectively.
+- Use version control effectively .
 - Track experiments and version data.
 - Perform hyperparameter tuning and package models for deployment.
 - (Optional) Deploy and orchestrate a model using Kubernetes.
@@ -107,6 +107,10 @@ This project focuses on understanding the basics of MLOps by implementing a CI/C
 1. Clone the repository:
    ```bash
    git clone <repository-link>
+
+   after running app.py use below command to test:-
+   curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"features\": [5.1, 3.5, 1.4, 0.2]}"
+
    ```
 
 2. Follow instructions in the `README` file of each module directory to replicate results.
