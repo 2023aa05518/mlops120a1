@@ -1,8 +1,9 @@
-### Model Saving Script (save_model.py)
+# Model Saving Script (save_model.py)
 import joblib
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+
 
 def save_best_model(best_params):
     iris = load_iris()
@@ -15,6 +16,7 @@ def save_best_model(best_params):
 
     joblib.dump(model, "best_model.pkl")
     print("Model saved as 'best_model.pkl'")
+    
 
 if __name__ == "__main__":
     # Example best_params for testing
@@ -24,3 +26,4 @@ if __name__ == "__main__":
         "min_samples_split": 0.2
     }
     save_best_model(best_params)
+
